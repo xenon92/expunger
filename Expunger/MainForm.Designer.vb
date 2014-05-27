@@ -22,7 +22,6 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.comboboxExtensions = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,7 +32,6 @@ Partial Class MainForm
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.labelCopyright = New System.Windows.Forms.Label()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -107,7 +105,6 @@ Partial Class MainForm
         Me.Label4.Size = New System.Drawing.Size(72, 19)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "extension"
-        Me.ToolTip1.SetToolTip(Me.Label4, "Extension of the Files to be Deleted")
         '
         'Button1
         '
@@ -176,6 +173,5 @@ Partial Class MainForm
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents labelCopyright As System.Windows.Forms.Label
-    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 
 End Class
