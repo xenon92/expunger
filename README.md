@@ -31,3 +31,9 @@ Downloads
 ----
 
 Check "Releases" section above.
+
+
+Copyright
+----
+
+Copyright (C) 2012, 2014 by Shubhang Rathore
