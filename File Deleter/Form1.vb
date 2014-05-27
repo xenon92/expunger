@@ -6,26 +6,27 @@
         Application.Exit()
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        FolderBrowserDialog1.ShowDialog()
+    'Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    ' FolderBrowserDialog1.ShowDialog()
 
-        TextBox1.Text = FolderBrowserDialog1.SelectedPath
-    End Sub
+    ' TextBox1.Text = FolderBrowserDialog1.SelectedPath
+    '  End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
-        If TextBox1.Text = "" Or ComboBox1.Text = "" Then
+        'If TextBox1.Text = "" Or ComboBox1.Text = "" Then
+        If ComboBox1.Text = "" Then
             MsgBox("Please Choose the Required Details!", MsgBoxStyle.Exclamation)
         Else
             Try
                 Dim ext As String
                 ext = ComboBox1.Text
-                location1 = TextBox1.Text & "\" & "*." & ext
+                'location1 = TextBox1.Text & "\" & "*." & ext
 
                 'MsgBox(location1)
 
                 Dim sYourCommand As String
-                sYourCommand = "del " & location1
+                sYourCommand = "del *." & ext
                 'MsgBox(sYourCommand)
                 Shell("cmd /c " & sYourCommand, vbHide)
 

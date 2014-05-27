@@ -33,10 +33,6 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -47,7 +43,7 @@ Partial Class Form1
         Me.ComboBox1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"torrent", "txt", "pdf", "avi", "flv", "mp3", "mp4", "mpeg", "jpg", "png", "ico"})
-        Me.ComboBox1.Location = New System.Drawing.Point(241, 96)
+        Me.ComboBox1.Location = New System.Drawing.Point(237, 33)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(132, 26)
         Me.ComboBox1.TabIndex = 0
@@ -58,7 +54,7 @@ Partial Class Form1
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Tempus Sans ITC", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(43, 96)
+        Me.Label1.Location = New System.Drawing.Point(39, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(163, 24)
         Me.Label1.TabIndex = 1
@@ -69,7 +65,7 @@ Partial Class Form1
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(275, 148)
+        Me.PictureBox1.Location = New System.Drawing.Point(271, 85)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(64, 57)
         Me.PictureBox1.TabIndex = 2
@@ -81,7 +77,7 @@ Partial Class Form1
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Tempus Sans ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(239, 227)
+        Me.Label2.Location = New System.Drawing.Point(235, 170)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(74, 19)
         Me.Label2.TabIndex = 3
@@ -93,7 +89,7 @@ Partial Class Form1
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Tempus Sans ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(44, 218)
+        Me.Label3.Location = New System.Drawing.Point(39, 164)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(147, 38)
         Me.Label3.TabIndex = 4
@@ -105,7 +101,7 @@ Partial Class Form1
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Tempus Sans ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(305, 227)
+        Me.Label4.Location = New System.Drawing.Point(301, 170)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(71, 19)
         Me.Label4.TabIndex = 5
@@ -115,7 +111,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(438, 135)
+        Me.Button1.Location = New System.Drawing.Point(408, 64)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(88, 40)
         Me.Button1.TabIndex = 6
@@ -125,7 +121,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(438, 191)
+        Me.Button2.Location = New System.Drawing.Point(408, 129)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(88, 40)
         Me.Button2.TabIndex = 7
@@ -138,46 +134,11 @@ Partial Class Form1
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(392, 266)
+        Me.Label5.Location = New System.Drawing.Point(369, 226)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(141, 15)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "© Shubhang Rathore 2012"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Tempus Sans ITC", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(44, 40)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(160, 24)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Choose Directory :"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(212, 42)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(190, 23)
-        Me.TextBox1.TabIndex = 10
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(441, 37)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(82, 31)
-        Me.Button3.TabIndex = 11
-        Me.Button3.Text = "&Browse"
-        Me.ToolTip1.SetToolTip(Me.Button3, "Browse to Directory Folder")
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'FolderBrowserDialog1
-        '
-        Me.FolderBrowserDialog1.ShowNewFolderButton = False
         '
         'Form1
         '
@@ -185,10 +146,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(545, 290)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label6)
+        Me.ClientSize = New System.Drawing.Size(522, 250)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -217,10 +175,6 @@ Partial Class Form1
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents FolderBrowserDialog1 As System.Windows.Forms.FolderBrowserDialog
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 
 End Class
