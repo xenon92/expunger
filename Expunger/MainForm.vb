@@ -19,17 +19,16 @@
             MsgBox("Please Choose the Required Details!", MsgBoxStyle.Exclamation)
         Else
             Try
-                Dim ext As String
-                ext = comboboxExtensions.Text
+                Dim fileExtension As String
+                fileExtension = comboboxExtensions.Text
                 'location1 = TextBox1.Text & "\" & "*." & ext
 
                 'MsgBox(location1)
 
-                Dim sYourCommand As String
-                sYourCommand = "del *." & ext
+                Dim expungeCommand As String
+                expungeCommand = "del *." & fileExtension
                 'MsgBox(sYourCommand)
-                Shell("cmd /c " & sYourCommand, vbHide)
-
+                Shell("cmd /c " & expungeCommand, vbHide)
 
             Catch ex As Exception
                 MsgBox("Oops! Some Error Occured.", MsgBoxStyle.Critical)
