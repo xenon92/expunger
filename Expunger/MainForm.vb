@@ -15,12 +15,12 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
         'If TextBox1.Text = "" Or ComboBox1.Text = "" Then
-        If ComboBox1.Text = "" Then
+        If comboboxExtensions.Text = "" Then
             MsgBox("Please Choose the Required Details!", MsgBoxStyle.Exclamation)
         Else
             Try
                 Dim ext As String
-                ext = ComboBox1.Text
+                ext = comboboxExtensions.Text
                 'location1 = TextBox1.Text & "\" & "*." & ext
 
                 'MsgBox(location1)
@@ -39,20 +39,20 @@
 
     End Sub
 
-    Private Sub ComboBox1_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles ComboBox1.LostFocus
-        If ComboBox1.Text = "" Then
+    Private Sub ComboBox1_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles comboboxExtensions.LostFocus
+        If comboboxExtensions.Text = "" Then
             Label4.Text = "extension"
         Else
-            Label4.Text = ComboBox1.Text
+            Label4.Text = comboboxExtensions.Text
         End If
 
     End Sub
 
     Private Sub Form1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseClick
-        If ComboBox1.Text = "" Then
+        If comboboxExtensions.Text = "" Then
             Label4.Text = "extension"
         Else
-            Label4.Text = ComboBox1.Text
+            Label4.Text = comboboxExtensions.Text
         End If
 
 

@@ -24,7 +24,7 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.comboboxExtensions = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -37,16 +37,16 @@ Partial Class MainForm
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ComboBox1
+        'comboboxExtensions
         '
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox1.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"torrent", "txt", "pdf", "avi", "flv", "mp3", "mp4", "mpeg", "jpg", "png", "ico"})
-        Me.ComboBox1.Location = New System.Drawing.Point(239, 33)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(132, 26)
-        Me.ComboBox1.TabIndex = 0
+        Me.comboboxExtensions.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.comboboxExtensions.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.comboboxExtensions.FormattingEnabled = True
+        Me.comboboxExtensions.Items.AddRange(New Object() {"torrent", "txt", "pdf", "avi", "flv", "mp3", "mp4", "mpeg", "jpg", "png", "ico"})
+        Me.comboboxExtensions.Location = New System.Drawing.Point(239, 33)
+        Me.comboboxExtensions.Name = "comboboxExtensions"
+        Me.comboboxExtensions.Size = New System.Drawing.Size(132, 24)
+        Me.comboboxExtensions.TabIndex = 0
         '
         'Label1
         '
@@ -156,7 +156,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.comboboxExtensions)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "MainForm"
@@ -167,7 +167,7 @@ Partial Class MainForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents comboboxExtensions As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
