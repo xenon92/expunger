@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("File Deleter")> 
-<Assembly: AssemblyDescription("Deletes All Files of the given extension")> 
+<Assembly: AssemblyTitle("Expunger")> 
+<Assembly: AssemblyDescription("Bulk delete files based on their extension")> 
 <Assembly: AssemblyCompany("Shubhang Rathore")> 
-<Assembly: AssemblyProduct("File Deleter")> 
-<Assembly: AssemblyCopyright("Copyright © Shubhang Rathore 2012")> 
+<Assembly: AssemblyProduct("Expunger")> 
+<Assembly: AssemblyCopyright("© 2012, 2014 Shubhang Rathore")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("2.0.0.0")> 
-<Assembly: AssemblyFileVersion("2.0.0.0")> 
+<Assembly: AssemblyVersion("3.0.0.0")> 
+<Assembly: AssemblyFileVersion("3.0.0.0")> 
