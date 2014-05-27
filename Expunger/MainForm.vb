@@ -2,7 +2,7 @@
 
 
     Public location1 As String
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub buttonExitClick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles buttonExit.Click
         Application.Exit()
     End Sub
 
@@ -12,7 +12,7 @@
     ' TextBox1.Text = FolderBrowserDialog1.SelectedPath
     '  End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub buttonDeleteClick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles buttonDelete.Click
 
         'If TextBox1.Text = "" Or ComboBox1.Text = "" Then
         If comboboxExtensions.Text = "" Then

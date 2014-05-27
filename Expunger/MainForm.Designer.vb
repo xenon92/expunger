@@ -29,8 +29,8 @@ Partial Class MainForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.buttonDelete = New System.Windows.Forms.Button()
+        Me.buttonExit = New System.Windows.Forms.Button()
         Me.labelCopyright = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -106,25 +106,25 @@ Partial Class MainForm
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "extension"
         '
-        'Button1
+        'buttonDelete
         '
-        Me.Button1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(408, 64)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(88, 40)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Delete"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.buttonDelete.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonDelete.Location = New System.Drawing.Point(408, 64)
+        Me.buttonDelete.Name = "buttonDelete"
+        Me.buttonDelete.Size = New System.Drawing.Size(88, 40)
+        Me.buttonDelete.TabIndex = 6
+        Me.buttonDelete.Text = "Delete"
+        Me.buttonDelete.UseVisualStyleBackColor = True
         '
-        'Button2
+        'buttonExit
         '
-        Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(408, 129)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(88, 40)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "&Exit"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.buttonExit.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buttonExit.Location = New System.Drawing.Point(408, 129)
+        Me.buttonExit.Name = "buttonExit"
+        Me.buttonExit.Size = New System.Drawing.Size(88, 40)
+        Me.buttonExit.TabIndex = 7
+        Me.buttonExit.Text = "&Exit"
+        Me.buttonExit.UseVisualStyleBackColor = True
         '
         'labelCopyright
         '
@@ -146,8 +146,8 @@ Partial Class MainForm
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(522, 250)
         Me.Controls.Add(Me.labelCopyright)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.buttonExit)
+        Me.Controls.Add(Me.buttonDelete)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -170,8 +170,8 @@ Partial Class MainForm
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents buttonDelete As System.Windows.Forms.Button
+    Friend WithEvents buttonExit As System.Windows.Forms.Button
     Friend WithEvents labelCopyright As System.Windows.Forms.Label
 
 End Class
