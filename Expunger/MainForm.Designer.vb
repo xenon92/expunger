@@ -28,7 +28,7 @@ Partial Class MainForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.labelExtension = New System.Windows.Forms.Label()
         Me.buttonDelete = New System.Windows.Forms.Button()
         Me.buttonExit = New System.Windows.Forms.Button()
         Me.labelCopyright = New System.Windows.Forms.Label()
@@ -94,17 +94,17 @@ Partial Class MainForm
         Me.Label3.Text = "Type of files that will be " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "deleted permanently:"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label4
+        'labelExtension
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(307, 171)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(72, 19)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "extension"
+        Me.labelExtension.AutoSize = True
+        Me.labelExtension.BackColor = System.Drawing.Color.Transparent
+        Me.labelExtension.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelExtension.ForeColor = System.Drawing.Color.White
+        Me.labelExtension.Location = New System.Drawing.Point(307, 171)
+        Me.labelExtension.Name = "labelExtension"
+        Me.labelExtension.Size = New System.Drawing.Size(72, 19)
+        Me.labelExtension.TabIndex = 5
+        Me.labelExtension.Text = "extension"
         '
         'buttonDelete
         '
@@ -148,7 +148,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.labelCopyright)
         Me.Controls.Add(Me.buttonExit)
         Me.Controls.Add(Me.buttonDelete)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.labelExtension)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
@@ -169,7 +169,7 @@ Partial Class MainForm
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents labelExtension As System.Windows.Forms.Label
     Friend WithEvents buttonDelete As System.Windows.Forms.Button
     Friend WithEvents buttonExit As System.Windows.Forms.Button
     Friend WithEvents labelCopyright As System.Windows.Forms.Label

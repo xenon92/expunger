@@ -45,9 +45,9 @@
 
 
         If comboboxExtensions.Text = "" Then
-            Label4.Text = "extension"
+            labelExtension.Text = "extension"
         Else
-            Label4.Text = comboboxExtensions.Text
+            labelExtension.Text = comboboxExtensions.Text
         End If
 
 
@@ -57,9 +57,9 @@
 
 
         If comboboxExtensions.Text = "" Then
-            Label4.Text = "extension"
+            labelExtension.Text = "extension"
         Else
-            Label4.Text = comboboxExtensions.Text
+            labelExtension.Text = comboboxExtensions.Text
         End If
 
 
