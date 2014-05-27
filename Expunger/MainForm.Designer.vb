@@ -32,7 +32,7 @@ Partial Class MainForm
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.labelCopyright = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -129,17 +129,17 @@ Partial Class MainForm
         Me.Button2.Text = "&Exit"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label5
+        'labelCopyright
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(367, 228)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(149, 16)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "© Shubhang Rathore 2012"
+        Me.labelCopyright.AutoSize = True
+        Me.labelCopyright.BackColor = System.Drawing.Color.Transparent
+        Me.labelCopyright.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelCopyright.ForeColor = System.Drawing.Color.White
+        Me.labelCopyright.Location = New System.Drawing.Point(334, 226)
+        Me.labelCopyright.Name = "labelCopyright"
+        Me.labelCopyright.Size = New System.Drawing.Size(179, 16)
+        Me.labelCopyright.TabIndex = 8
+        Me.labelCopyright.Text = "© 2012, 2014 Shubhang Rathore"
         '
         'MainForm
         '
@@ -148,7 +148,7 @@ Partial Class MainForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(522, 250)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.labelCopyright)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
@@ -175,7 +175,7 @@ Partial Class MainForm
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents labelCopyright As System.Windows.Forms.Label
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 
 End Class
