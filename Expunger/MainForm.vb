@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class MainForm
 
 
     Public location1 As String
