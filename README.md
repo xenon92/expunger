@@ -27,6 +27,12 @@ System Requirements
 - Windows 7, Windows 8, Windows 8.1
 
 
+TODO
+----
+
+- Add checkbox to delete recursively through subfolders
+
+
 Downloads
 ----
 
