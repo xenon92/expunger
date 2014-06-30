@@ -89,11 +89,11 @@ Partial Class MainForm
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(59, 164)
+        Me.Label3.Location = New System.Drawing.Point(55, 164)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(128, 38)
+        Me.Label3.Size = New System.Drawing.Size(135, 38)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "File to be deleted" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "permanently"
+        Me.Label3.Text = "Files to be deleted" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "permanently"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'labelExtension
