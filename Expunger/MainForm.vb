@@ -55,6 +55,11 @@
 
     Private Sub Form1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseClick
 
+        updateExtensionLabel()
+
+    End Sub
+
+    Private Sub updateExtensionLabel()
 
         If comboboxExtensions.Text = "" Then
             labelExtension.Text = "extension"
@@ -62,7 +67,17 @@
             labelExtension.Text = comboboxExtensions.Text
         End If
 
+    End Sub
+
+    Private Sub comboboxExtensions_SelectedIndexChanged(sender As Object, e As EventArgs) Handles comboboxExtensions.SelectedIndexChanged
+
+        updateExtensionLabel()
 
     End Sub
 
+    Private Sub comboboxExtensions_SelectedValueChanged(sender As Object, e As EventArgs) Handles comboboxExtensions.SelectedValueChanged
+
+        updateExtensionLabel()
+
+    End Sub
 End Class
