@@ -32,6 +32,8 @@ Partial Class MainForm
         Me.buttonDelete = New System.Windows.Forms.Button()
         Me.buttonExit = New System.Windows.Forms.Button()
         Me.labelCopyright = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,7 +43,7 @@ Partial Class MainForm
         Me.comboboxExtensions.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.comboboxExtensions.FormattingEnabled = True
         Me.comboboxExtensions.Items.AddRange(New Object() {"torrent", "txt", "pdf", "avi", "flv", "mp3", "mp4", "mpeg", "jpg", "png", "ico"})
-        Me.comboboxExtensions.Location = New System.Drawing.Point(239, 33)
+        Me.comboboxExtensions.Location = New System.Drawing.Point(241, 33)
         Me.comboboxExtensions.Name = "comboboxExtensions"
         Me.comboboxExtensions.Size = New System.Drawing.Size(132, 24)
         Me.comboboxExtensions.TabIndex = 0
@@ -52,11 +54,11 @@ Partial Class MainForm
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Cambria", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(41, 35)
+        Me.Label1.Location = New System.Drawing.Point(78, 35)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(161, 22)
+        Me.Label1.Size = New System.Drawing.Size(90, 22)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Choose Extension :"
+        Me.Label1.Text = "Extension"
         '
         'PictureBox1
         '
@@ -87,11 +89,11 @@ Partial Class MainForm
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(39, 164)
+        Me.Label3.Location = New System.Drawing.Point(59, 164)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(177, 38)
+        Me.Label3.Size = New System.Drawing.Size(128, 38)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Type of files that will be " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "deleted permanently:"
+        Me.Label3.Text = "File to be deleted" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "permanently"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'labelExtension
@@ -138,6 +140,32 @@ Partial Class MainForm
         Me.labelCopyright.TabIndex = 8
         Me.labelCopyright.Text = "© 2012, 2014 Shubhang Rathore"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(202, 171)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(14, 19)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "-"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Cambria", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(199, 38)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(14, 19)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "-"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -145,6 +173,8 @@ Partial Class MainForm
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(522, 250)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.labelCopyright)
         Me.Controls.Add(Me.buttonExit)
         Me.Controls.Add(Me.buttonDelete)
@@ -173,5 +203,7 @@ Partial Class MainForm
     Friend WithEvents buttonDelete As System.Windows.Forms.Button
     Friend WithEvents buttonExit As System.Windows.Forms.Button
     Friend WithEvents labelCopyright As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
 
 End Class
