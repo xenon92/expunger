@@ -36,7 +36,13 @@ TODO
 Downloads
 ----
 
-Check "Releases" section above.
+Check "[Releases] (https://github.com/xenon92/expunger/releases)" section above.
+
+
+License
+---
+
+The source code is licensed under GNU General Public License v3 ([GPL v3] (https://github.com/xenon92/expunger/blob/master/LICENSE))
 
 
 Copyright
